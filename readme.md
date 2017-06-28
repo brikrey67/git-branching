@@ -95,7 +95,11 @@ Let's see what this process looks like visually:
 
 ![before-merge](merging.png)
 
-***Locally***, all we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
+***Locally***, all we need to do is checkout (switch to) the master branch and then run the git merge command to integrate our feature branch:
+
+```
+$ git checkout master
+```
 
 ```
 $ git merge <feature_branch_name>
@@ -182,7 +186,7 @@ Create a feature branch off the master to work on this issue. The branch name sh
 
 #### Work on your Branch and Commit Locally
 
-Make changes, add, and commit locally, then push your branch up to our remote repository.
+Make changes, add, and commit locally, then push your branch up to the remote repository.
 
 ```bash
  $ git add <file-path>
