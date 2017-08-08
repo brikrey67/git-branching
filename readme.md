@@ -157,7 +157,7 @@ We are going to start with a [brief tutorial](http://learngitbranching.js.org/).
 
 ## You Do: Managing Multiple Remotes
 
-You probably have noticed we made you sign up for not only for a GitHub account (`github.com`), but also for a GitHub Enterprise account (`git.generalassemb.ly`).
+You probably have noticed we made you sign up for not only for a GitHub account (`github.com`), but also for a GitHub Enterprise account (`git.generalassemb.ly`). In some cases, you may want to push code you have on your GitHub Enterprise account to your GitHub account. These are 2 distinct remote hosts, but `git` allows us to push our code to multiple remotes. 
 
 1. Change to your home directory and type `git status` to ensure you don't have a repository initialized in your home directory.
 
