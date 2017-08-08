@@ -51,6 +51,70 @@ Quickly review the basics of git:
 
 ---
 
+## You Do: Managing Multiple Remotes
+
+You probably have noticed we made you sign up for not only for a GitHub account (`github.com`), but also for a GitHub Enterprise account (`git.generalassemb.ly`). In some cases, you may want to push code you have on your GitHub Enterprise account to your GitHub account. These are 2 distinct remote hosts, but `git` allows us to push our code to multiple remotes.
+
+1. Change to your home directory and type `git status` to ensure you don't have a repository initialized in your home directory.
+
+```sh
+ $ cd ~
+ $ git status
+```
+
+If you are in your home directory and don't see the error message below after entering `git status`, flag down an instructor for assistance.
+
+```
+fatal: Not a git repository (or any of the parent directories): .git
+```
+
+2. Create a new directory in your home directory called `test-repo`.
+
+ ```sh
+$ mkdir test-repo
+```
+
+3. Change directory into `test-repo` and initialize a repository.
+
+```sh
+ $ git init
+```
+
+4. Next create a random file, then add and commit that file.
+
+```sh
+ $ echo "hello world" > random.txt
+ $ git add random.txt
+ $ git commit -m "add random.txt for testing purposes"
+```
+
+5. Create a repo called `test-repo` on your GitHub account
+![Github New Repo](./images/new-repo-github.png)
+![GitHub New Repo Part 2](./images/new-repo-pt ii.png)
+
+Click the green `Create Repository` button at the bottom.
+
+6. Copy the clone URL to your clipboard.
+
+![Copy clone URL](./images/clone-url.png)
+
+7. Add a new remote, and then push to it.
+
+```sh
+ $ git remote add origin <PASTE CLIPBOARD CONTENTS HERE DONT COPY THIS PART>
+ $ git push origin master
+```
+
+8. Refresh your GitHub `test-repo` page. You should see your commits reflected.
+
+9. Create an identically titled repo called `test-repo` on your ***GitHub Enterprise account***.
+![Github Enterprise New Repo](./images/new-repo-ghe.png)
+![Github Enterprise New Repo Part 2](./images/new-repo-pt ii.png)
+
+10. Repeat steps 6-8 for `test-repo` on your GitHub Enterprise account.
+
+---
+
 ## Why Branch (5 min, 0:15)
 
 <details>
@@ -154,68 +218,6 @@ We are going to start with a [brief tutorial](http://learngitbranching.js.org/).
 
 
 [git cheat sheet](http://ndpsoftware.com/git-cheatsheet.html)
-
-## You Do: Managing Multiple Remotes
-
-You probably have noticed we made you sign up for not only for a GitHub account (`github.com`), but also for a GitHub Enterprise account (`git.generalassemb.ly`). In some cases, you may want to push code you have on your GitHub Enterprise account to your GitHub account. These are 2 distinct remote hosts, but `git` allows us to push our code to multiple remotes. 
-
-1. Change to your home directory and type `git status` to ensure you don't have a repository initialized in your home directory.
-
-```sh
- $ cd ~
- $ git status
-```
-
-If you are in your home directory and don't see the error message below after entering `git status`, flag down an instructor for assistance.
-
-```
-fatal: Not a git repository (or any of the parent directories): .git
-```
-
-2. Create a new directory in your home directory called `test-repo`.
-
- ```sh
-$ mkdir test-repo
-```
-
-3. Change directory into `test-repo` and initialize a repository.
-
-```sh
- $ git init
-```
-
-4. Next create a random file, then add and commit that file.
-
-```sh
- $ echo "hello world" > random.txt
- $ git add random.txt
- $ git commit -m "add random.txt for testing purposes"
-```
-
-5. Create a repo called `test-repo` on your GitHub account
-![Github New Repo](./images/new-repo-github.png)
-![GitHub New Repo Part 2](./images/new-repo-pt ii.png)
-
-Click the green `Create Repository` button at the bottom.
-
-6. Copy the clone URL to your clipboard.
-
-![Copy clone URL](./images/clone-url.png)
-
-7. Add a new remote, and then push to it.
-
-```sh
- $ git remote add origin <PASTE CLIPBOARD CONTENTS HERE DONT COPY THIS PART>
- $ git push origin master
-```
-
-8. Refresh your GitHub `test-repo` page. You should see your commits reflected.
-
-9. Create an identically titled repo called `test-repo` on your ***GitHub Enterprise account***.
-![Github Enterprise New Repo](./images/new-repo-ghe.png)
-![Github Enterprise New Repo Part 2](./images/new-repo-pt ii.png)
-
-10. Repeat steps 6-8 for `test-repo` on your GitHub Enterprise account.
 
 ## Overview of a GitHub Workflow (10 min, 1:15)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
