@@ -1,6 +1,7 @@
 # Git Branching + Workflows
 
 ## Learning Objectives
+- Manage multiple remotes
 - Explain what a branch is in git
 - Create, merge, and delete branches on local and remote repositories
 - Describe how branching and merging allows for collaboration during development
@@ -51,11 +52,19 @@ Quickly review the basics of git:
 
 ---
 
-## You Do: Managing Multiple Remotes
+## I Do then You Do: Managing Multiple Remotes
 
-You probably have noticed we made you sign up for not only for a GitHub account (`github.com`), but also for a GitHub Enterprise account (`git.generalassemb.ly`). In some cases, you may want to push code you have on your GitHub Enterprise account to your GitHub account. These are 2 distinct remote hosts, but `git` allows us to push our code to multiple remotes.
+We're going to get a little more practice pushing local code to remotes as we incorporate some new skills with managing multiple remotes.
 
-1. Change to your home directory and type `git status` to ensure you don't have a repository initialized in your home directory.
+Since, we had you sign up for not only for a GitHub account (`github.com`), but also for a GitHub Enterprise account (`git.generalassemb.ly`), there are potentially two places to push code.
+
+School assignments will go on `git.generalassemb.ly` while personal projects should go to your `github.com` account.
+
+In some cases, you may want to push code you have on your GitHub Enterprise account to your GitHub account. These are 2 distinct remote hosts, but `git` has features enabling us to push our code to multiple remotes.
+
+## Pushing Local Code to Multiple Remotes
+
+1. Change to your home directory and type `git status` to ensure you don't have a repository initialized in your home directory. This is to avoid nesting repositories or "gitception."
 
 ```sh
  $ cd ~
@@ -71,7 +80,7 @@ fatal: Not a git repository (or any of the parent directories): .git
 2. Create a new directory in your home directory called `test-repo`.
 
  ```sh
-$ mkdir test-repo
+ $ mkdir test-repo
 ```
 
 3. Change directory into `test-repo` and initialize a repository.
@@ -90,15 +99,15 @@ $ mkdir test-repo
 
 5. Create a repo called `test-repo` on your GitHub account.
 
-> ![Github New Repo](./images/new-repo-github.png)
+- > ![Github New Repo](./images/new-repo-github.png)
 
-> ![GitHub New Repo Part 2](./images/new-repo-pt-ii.png)
+- > ![GitHub New Repo Part 2](./images/new-repo-pt-ii.png)
 
 Click the green `Create Repository` button at the bottom.
 
 6. Copy the clone URL to your clipboard.
 
-> ![Copy clone URL](./images/clone-url.png)
+- > ![Copy clone URL](./images/clone-url.png)
 
 7. Add a new remote, and then push to it.
 
@@ -111,11 +120,32 @@ Click the green `Create Repository` button at the bottom.
 
 9. Create an identically titled repo called `test-repo` on your ***GitHub Enterprise account***.
 
-> ![Github Enterprise New Repo](./images/new-repo-ghe.png)
+- > ![Github Enterprise New Repo](./images/new-repo-ghe.png)
 
-> ![Github Enterprise New Repo Part 2](./images/new-repo-pt-ii.png)
+- > ![Github Enterprise New Repo Part 2](./images/new-repo-pt-ii.png)
 
-10. Repeat steps 6-8 for `test-repo` on your GitHub Enterprise account.
+10. Repeat steps 6-8 for the `test-repo` hosted on your ***GitHub Enterprise account***.
+
+### Troubleshooting
+
+  > With `git remote remove` & `git remote -v`
+
+To check what remotes you have, and where they point to, type `git remote -v`.
+
+If you mistype a remote name, and instead type something like `oririgin` instead of `origin`, or miscopy/mistype a clone url...
+
+```sh
+ $ git remote add oririgin git@@@@@@git.generalassemb.ly:username/test-repo.git
+```
+  > bad clone-url, mistyped remote name
+
+You can use `git remote remove` <remote name> to remove the incorrectly titled remote...
+
+```sh
+$ git remote remove oririgin
+```
+
+This removes the remote named `oririgin`.
 
 ---
 
