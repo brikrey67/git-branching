@@ -1,7 +1,7 @@
 # Git Branching + Workflows
 
 ## Learning Objectives
-- Manage multiple remotes
+- Manage multiple remotes on a single repository
 - Explain what a branch is in git
 - Create, merge, and delete branches on local and remote repositories
 - Describe how branching and merging allows for collaboration during development
