@@ -88,20 +88,22 @@ $ mkdir test-repo
  $ git commit -m "add random.txt for testing purposes"
 ```
 
-5. Create a repo called `test-repo` on your GitHub account
-![Github New Repo](./images/new-repo-github.png)
-![GitHub New Repo Part 2](./images/new-repo-pt-ii.png)
+5. Create a repo called `test-repo` on your GitHub account.
+
+> ![Github New Repo](./images/new-repo-github.png)
+
+> ![GitHub New Repo Part 2](./images/new-repo-pt-ii.png)
 
 Click the green `Create Repository` button at the bottom.
 
 6. Copy the clone URL to your clipboard.
 
-![Copy clone URL](./images/clone-url.png)
+> ![Copy clone URL](./images/clone-url.png)
 
 7. Add a new remote, and then push to it.
 
 ```sh
- $ git remote add origin <PASTE CLIPBOARD CONTENTS HERE DONT COPY THIS PART>
+ $ git remote add origin <PASTE CLIPBOARD CONTENTS HERE DO NOT COPY THIS PART>
  $ git push origin master
 ```
 
