@@ -312,14 +312,14 @@ As soon as you commit and push a change, you can open a Pull Request. People use
 
 It's good practice to even make a pull requests for branches in your own repository and merge it yourself to get more comfortable with PRs!
 
-### We Do: GitHub Forking Workflow (10 min, 1:25)
+### We Do: GitHub Forking & Branching Workflow (10 min, 1:25)
 
-Many open-source software (OSS) projects request that you create pull requests from a non-master branch.
+Many open-source software (OSS) projects request that you create pull requests from a non-master branch on a fork.
 
-1. ***Fork and Clone*** https://github.com/ga-wdi-exercises/git-tricks.
+1. ***Fork and Clone*** the repo at https://github.com/ga-wdi-exercises/git-tricks.
 2. Create and switch to a feature branch called `<your_name>_suggestion`.
 3. Type in your own "trick" aka git command/functionality you just learned (or researched) about.
-4. Add and Commit your changes
+4. Add and then commit your changes.
 6. Push your **feature branch** to your `origin` remote (your fork).
 7. On GitHub, create a pull request from your **feature branch** to the upstream (ga-wdi-exercises) master branch.
 
@@ -359,14 +359,20 @@ This is the modified text
 
 This exercise will pertain to a workflow where 2 individuals work on the same repository as collaborators. It will not involve forking and all work will be done on the `master` branch.
 
-#### Find a Partner
-  - Designate one person as the **repository owner**, and the other as the **contributor**.
+Ultimately, we want to induce a merge conflict.
 
+Why would we want to create a merge conflict? That sounds stressful! Our goal here is to practice and learn how to deal with merge conflicts. This is perhaps like the coding equivalent of learning judo.
 
-#### Create a New Repo
+### Find a Partner and Choose Developer Roles
+
+Designate one person as the **repository owner**, and the other as the **contributor**.
+
+The **owner** will be creating and adding the **contributor** to the repo as a collaborator. While the **owner** is taking the following actions, the **contributor** should follow along, taking notes if desired.
+
+### Setup: Create a New Repo
   - **Repository Owner**:
     - In your `~/wdi/sandbox` directory, create a new directory named `merge-conflicts`.
-    - Initialize `merge-conflicts` as a git repository and create an `index.html` file.
+    - Initialize a git repo in `merge-conflicts` and create an `index.html` file.
     - Work with the contributor to fill out the basic structure for the `index.html` file.
     - Include in the `index.html` file an `h1` tag with the content "Merge Conflicts", and a `p` tag with something new you learned about today.
     - Create a new repo **on Github** called `merge-conflicts` and add this repo as a remote repo for your local `merge-conflicts` repo.
@@ -376,6 +382,8 @@ This exercise will pertain to a workflow where 2 individuals work on the same re
 
   - **Contributor**:
     - After they are added as a collaborator, they should clone the same repo. **Do not fork the Repo.**
+
+### Inducing a Merge Conflict
 
 
 #### Make Changes Locally
