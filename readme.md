@@ -90,7 +90,7 @@ $ mkdir test-repo
 
 5. Create a repo called `test-repo` on your GitHub account
 ![Github New Repo](./images/new-repo-github.png)
-![GitHub New Repo Part 2](./images/new-repo-pt ii.png)
+![GitHub New Repo Part 2](./images/new-repo-pt-ii.png)
 
 Click the green `Create Repository` button at the bottom.
 
