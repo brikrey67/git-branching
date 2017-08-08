@@ -110,8 +110,10 @@ Click the green `Create Repository` button at the bottom.
 8. Refresh your GitHub `test-repo` page. You should see your commits reflected.
 
 9. Create an identically titled repo called `test-repo` on your ***GitHub Enterprise account***.
-![Github Enterprise New Repo](./images/new-repo-ghe.png)
-![Github Enterprise New Repo Part 2](./images/new-repo-pt ii.png)
+
+> ![Github Enterprise New Repo](./images/new-repo-ghe.png)
+
+> ![Github Enterprise New Repo Part 2](./images/new-repo-pt ii.png)
 
 10. Repeat steps 6-8 for `test-repo` on your GitHub Enterprise account.
 
